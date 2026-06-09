@@ -21,14 +21,14 @@ export default function ArenaResponse({ solution1, solution2, judge }) {
             <ReactMarkdown 
               remarkPlugins={[remarkGfm]}
               components={{
-                h1: ({node, ...props}) => <h1 className="text-2xl font-bold mt-6 mb-4 text-zinc-900 dark:text-white" {...props} />,
-                h2: ({node, ...props}) => <h2 className="text-xl font-bold mt-5 mb-3 text-zinc-900 dark:text-white" {...props} />,
-                h3: ({node, ...props}) => <h3 className="text-lg font-bold mt-4 mb-2 text-zinc-900 dark:text-white" {...props} />,
-                p: ({node, ...props}) => <p className="mb-4 leading-relaxed text-zinc-700 dark:text-zinc-300" {...props} />,
-                ul: ({node, ...props}) => <ul className="list-disc pl-6 mb-4 text-zinc-700 dark:text-zinc-300 space-y-1" {...props} />,
-                ol: ({node, ...props}) => <ol className="list-decimal pl-6 mb-4 text-zinc-700 dark:text-zinc-300 space-y-1" {...props} />,
-                a: ({node, ...props}) => <a className="text-blue-600 hover:text-blue-500 underline" {...props} />,
-                code: ({node, inline, className, children, ...props}) => {
+                h1: ({node: _node, ...props}) => <h1 className="text-2xl font-bold mt-6 mb-4 text-zinc-900 dark:text-white" {...props} />,
+                h2: ({node: _node, ...props}) => <h2 className="text-xl font-bold mt-5 mb-3 text-zinc-900 dark:text-white" {...props} />,
+                h3: ({node: _node, ...props}) => <h3 className="text-lg font-bold mt-4 mb-2 text-zinc-900 dark:text-white" {...props} />,
+                p: ({node: _node, ...props}) => <p className="mb-4 leading-relaxed text-zinc-700 dark:text-zinc-300" {...props} />,
+                ul: ({node: _node, ...props}) => <ul className="list-disc pl-6 mb-4 text-zinc-700 dark:text-zinc-300 space-y-1" {...props} />,
+                ol: ({node: _node, ...props}) => <ol className="list-decimal pl-6 mb-4 text-zinc-700 dark:text-zinc-300 space-y-1" {...props} />,
+                a: ({node: _node, ...props}) => <a className="text-blue-600 hover:text-blue-500 underline" {...props} />,
+                code: ({node: _node, inline, className, children, ...props}) => {
                   return !inline ? (
                     <div className="rounded-xl overflow-hidden my-4 border border-zinc-200 dark:border-zinc-800">
                        <pre className="p-4 bg-zinc-950 overflow-x-auto text-sm text-zinc-100">
@@ -57,14 +57,14 @@ export default function ArenaResponse({ solution1, solution2, judge }) {
             <ReactMarkdown 
               remarkPlugins={[remarkGfm]}
               components={{
-                h1: ({node, ...props}) => <h1 className="text-2xl font-bold mt-6 mb-4 text-zinc-900 dark:text-white" {...props} />,
-                h2: ({node, ...props}) => <h2 className="text-xl font-bold mt-5 mb-3 text-zinc-900 dark:text-white" {...props} />,
-                h3: ({node, ...props}) => <h3 className="text-lg font-bold mt-4 mb-2 text-zinc-900 dark:text-white" {...props} />,
-                p: ({node, ...props}) => <p className="mb-4 leading-relaxed text-zinc-700 dark:text-zinc-300" {...props} />,
-                ul: ({node, ...props}) => <ul className="list-disc pl-6 mb-4 text-zinc-700 dark:text-zinc-300 space-y-1" {...props} />,
-                ol: ({node, ...props}) => <ol className="list-decimal pl-6 mb-4 text-zinc-700 dark:text-zinc-300 space-y-1" {...props} />,
-                a: ({node, ...props}) => <a className="text-blue-600 hover:text-blue-500 underline" {...props} />,
-                code: ({node, inline, className, children, ...props}) => {
+                h1: ({node: _node, ...props}) => <h1 className="text-2xl font-bold mt-6 mb-4 text-zinc-900 dark:text-white" {...props} />,
+                h2: ({node: _node, ...props}) => <h2 className="text-xl font-bold mt-5 mb-3 text-zinc-900 dark:text-white" {...props} />,
+                h3: ({node: _node, ...props}) => <h3 className="text-lg font-bold mt-4 mb-2 text-zinc-900 dark:text-white" {...props} />,
+                p: ({node: _node, ...props}) => <p className="mb-4 leading-relaxed text-zinc-700 dark:text-zinc-300" {...props} />,
+                ul: ({node: _node, ...props}) => <ul className="list-disc pl-6 mb-4 text-zinc-700 dark:text-zinc-300 space-y-1" {...props} />,
+                ol: ({node: _node, ...props}) => <ol className="list-decimal pl-6 mb-4 text-zinc-700 dark:text-zinc-300 space-y-1" {...props} />,
+                a: ({node: _node, ...props}) => <a className="text-blue-600 hover:text-blue-500 underline" {...props} />,
+                code: ({node: _node, inline, className, children, ...props}) => {
                   return !inline ? (
                     <div className="rounded-xl overflow-hidden my-4 border border-zinc-200 dark:border-zinc-800">
                        <pre className="p-4 bg-zinc-950 overflow-x-auto text-sm text-zinc-100">

@@ -1,8 +1,11 @@
 import express from 'express';
+import path from 'node:path';
 import runGraph from "./services/grap.ai.service.js"
 // import cors from "cors"
 
 const app = express();
+const publicDir = path.resolve(process.cwd(), 'public');
+
 app.use(express.json());
 
 // Enable CORS
@@ -19,12 +22,14 @@ app.use((req, res, next) => {
 });
 
 
-app.get('/', (req, res) => {
+app.get('/health', (req, res) => {
     res.status(200).json({
         message: "AI Battle Arena backend is running",
         success: true
     })
 })
+
+app.use(express.static(publicDir));
 
 app.post("/invoke", async (req, res) => {
     try {
@@ -55,5 +60,8 @@ app.post("/invoke", async (req, res) => {
 
 })
 
+app.get(/.*/, (req, res) => {
+    res.sendFile(path.join(publicDir, 'index.html'));
+})
 
 export default app;
