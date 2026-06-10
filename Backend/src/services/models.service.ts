@@ -4,7 +4,7 @@ import { CohereClient } from "cohere-ai";
 import config from "../config/config.js";
 
 export const geminiModel = new ChatGoogle({
-    model: "gemini-2.0-flash",
+    model: "gemini-2.5-flash",
     apiKey: config.GEMINI_API_KEY
 });
 
