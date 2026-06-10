@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "postinstall": "npm install --prefix Backend && npm install --prefix Frontend && npm run build --prefix Frontend && npm run build --prefix Backend",
+    "postinstall": "npm install --production=false --prefix Backend && npm install --production=false --prefix Frontend && npm run build --prefix Frontend && npm run build --prefix Backend",
     "start": "npm start --prefix Backend",
     "dev:backend": "npm run dev --prefix Backend",
     "dev:frontend": "npm run dev --prefix Frontend",
